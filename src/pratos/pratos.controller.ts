@@ -10,7 +10,9 @@ import {
 import { PratosService } from './pratos.service';
 import { CreatePratoDto } from './dto/create-prato.dto';
 import { UpdatePratoDto } from './dto/update-prato.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('CRUD Pratos')
 @Controller('pratos')
 export class PratosController {
   constructor(private readonly pratosService: PratosService) {}
