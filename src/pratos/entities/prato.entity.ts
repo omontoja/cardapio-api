@@ -6,17 +6,23 @@ export class Prato {
   id: number;
 
   @Column()
-  nome: string;
+  name: string;
+
+  @Column('simple-array')
+  ingredients: string[];
 
   @Column()
-  ingredientes: string;
+  video: string;
 
   @Column()
-  link: string;
+  picture: string;
 
   @Column()
-  ativo: boolean;
+  description: string;
 
   @Column()
-  foto: string;
+  active: boolean;
+
+  @Column()
+  price: number;
 }
